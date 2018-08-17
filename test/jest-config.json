@@ -1,0 +1,20 @@
+{
+    "moduleFileExtensions": ["js"],
+    "rootDir": "../",
+    "testRegex": ".spec.js$",
+    "transform": {
+        "^.+\\.js$": "babel-jest",
+        "^.+\\.html$": "<rootDir>/test/html.js"
+    },
+    "transformIgnorePatterns": [
+        "<rootDir>/node_modules/(?!(element-ui)/)"
+    ],
+    "globals": {
+    },
+    "moduleNameMapper": {
+        "^@components/(.*)$": "<rootDir>/src/components/$1",
+        "^@views/(.*)$": "<rootDir>/src/views/$1",
+        "^@utils/(.*)$": "<rootDir>/src/utils/$1",
+        "^vue$": "vue/dist/vue.common.js"
+    }
+}
